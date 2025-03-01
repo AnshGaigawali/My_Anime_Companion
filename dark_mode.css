@@ -87,7 +87,7 @@ body, .stApp {
 
 /* Specific adjustments for labels and text inputs */
 .stSidebarItem, .stSidebar label, .stTextInput label {
-    color: #a7a7a7 !important; /* Light gray for labels */
+    color: grey !important; /* Light gray for labels */
     font-size: 1rem; /* Base font size */
 }
 
