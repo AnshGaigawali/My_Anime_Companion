@@ -64,14 +64,12 @@ body, .stApp {
     }
 }
 
-/* Dark mode styles for dropdown menu text */
-.stSelectbox, .stSelectbox label, .stSelectbox div[data-testid="stMarkdownContainer"] {
-    color: #000000 !important; /* Black text color */
-}
-
-/* Ensure all child elements inherit the dark text color */
-.stSelectbox *, .stSelectbox label *, .stSelectbox div[data-testid="stMarkdownContainer"] * {
-    color: #000000 !important; /* Black text color */
+/* Styling the sidebar */
+.stSidebar, .stSidebarContainer {
+    background-color: #242426; /* Dark sidebar background */
+    color: whitesmoke; /* Light text color */
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Styling headings */
