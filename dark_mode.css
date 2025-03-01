@@ -170,26 +170,13 @@ div[data-testid="stRadio"] div[data-testid="stMarkdownContainer"] p {
 }
 
 /* Dark mode styles for conversation history */
-.stMarkdown, .stText {
+.stElementContainer, .stText, .st-emotion-cache-2qp9ou {
     color: #e0e0e0 !important; /* Light text color */
 }
 
-.user-message {
-    color: #e0e0e0 !important; /* Light text color for user messages */
-}
-
-.bot-message {
-    color: #e0e0e0 !important; /* Light text color for bot messages */
-}
-
-.stText .st-emotion-cache-1b3332t {
+/* Ensure all child elements inherit the light text color */
+.stElementContainer *, .stText *, .st-emotion-cache-2qp9ou * {
     color: #e0e0e0 !important; /* Light text color */
-}
-
-@media (max-width: 768px) {
-    .stText .st-emotion-cache-1b3332t {
-        font-size: 0.9rem; /* Smaller font size for mobile conversation history */
-    }
 }
 
 /* Styling for autofilled input fields */
