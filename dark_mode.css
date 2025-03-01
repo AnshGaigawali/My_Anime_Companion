@@ -64,13 +64,13 @@ body, .stApp {
     }
 }
 
-/* Dark mode styles for sidebar text */
-.stSidebar, .stSidebarItem, .stSidebar label {
+/* Dark mode styles for dropdown menu text */
+.stSelectbox, .stSelectbox label, .stSelectbox div[data-testid="stMarkdownContainer"] {
     color: #000000 !important; /* Black text color */
 }
 
 /* Ensure all child elements inherit the dark text color */
-.stSidebar *, .stSidebarItem *, .stSidebar label * {
+.stSelectbox *, .stSelectbox label *, .stSelectbox div[data-testid="stMarkdownContainer"] * {
     color: #000000 !important; /* Black text color */
 }
 
