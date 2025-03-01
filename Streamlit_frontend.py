@@ -32,7 +32,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Constants
-FLASK_API_URL = "http://127.0.0.1:5000"  # Update this if your Flask backend is hosted elsewhere
+FLASK_API_URL = https://myanimecompanion-feh1.onrender.com
 DB_CONNECTION_STRING = os.getenv("DB_CONNECTION_STRING", "mongodb+srv://anshgaigawali:anshtini@cluster2.l7iru.mongodb.net/animechatbot?retryWrites=true&w=majority&appName=Cluster2")
 client = MongoClient(DB_CONNECTION_STRING)
 db = client['animechatbot']
