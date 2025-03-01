@@ -64,12 +64,14 @@ body, .stApp {
     }
 }
 
-/* Styling the sidebar */
-.stSidebar, .stSidebarContainer {
-    background-color: #242426; /* Dark sidebar background */
-    color: whitesmoke; /* Light text color */
-    padding: 15px;
-    font-family: 'Poppins', sans-serif;
+/* Dark mode styles for sidebar text */
+.stSidebar, .stSidebarItem, .stSidebar label {
+    color: #000000 !important; /* Black text color */
+}
+
+/* Ensure all child elements inherit the dark text color */
+.stSidebar *, .stSidebarItem *, .stSidebar label * {
+    color: #000000 !important; /* Black text color */
 }
 
 /* Styling headings */
@@ -87,7 +89,7 @@ body, .stApp {
 
 /* Specific adjustments for labels and text inputs */
 .stSidebarItem, .stSidebar label, .stTextInput label {
-    color: grey !important; /* Light gray for labels */
+    color: #a7a7a7 !important; /* Light gray for labels */
     font-size: 1rem; /* Base font size */
 }
 
