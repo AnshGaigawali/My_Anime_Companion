@@ -392,7 +392,7 @@ def main():
             greeting_name = name if name else st.session_state["user_email"]
             
             st.header(f"Welcome {greeting_name}!")
-            st.write("Search for your favorite anime or get personalized recommendations.")
+            st.write("Search for your favorite anime.")
 
             # Search and recommendations
             user_input = st.text_input("Search for an anime:")
