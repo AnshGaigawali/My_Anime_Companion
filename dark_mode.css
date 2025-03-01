@@ -1,0 +1,197 @@
+/* General body styling for dark mode */
+body, .stApp {
+    background-color: #1c1d1f; /* Dark background */
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0; /* Light text color */
+    font-size: 1rem; /* Base font size */
+}
+
+/* Responsive font sizes */
+@media (max-width: 1200px) {
+    body, .stApp {
+        font-size: 0.95rem; /* Slightly smaller font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    body, .stApp {
+        font-size: 0.9rem; /* Smaller font size for mobile devices */
+    }
+}
+
+/* Dark mode hover effect for buttons */
+.stButton > button {
+    background-color: #534f4f; /* Dark gray background */
+    color: whitesmoke; /* Light text color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+    min-width: 100px;
+    border: 1px solid #444; /* Dark gray border */
+}
+
+.stButton > button:hover {
+    background-color: #666666; /* Slightly lighter gray on hover */
+    color: whitesmoke; /* Light text color */
+    border: 1px solid #777; /* Slightly lighter border on hover */
+}
+
+
+/* Add space between refresh and toggle buttons */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Responsive button styles */
+@media (max-width: 768px) {
+    .stButton > button {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        min-width: 80px; /* Reduce minimum width for smaller screens */
+    }
+}
+
+/* Adjustments for zoomed screens */
+@media (max-width: 400px) {
+    .stButton > button {
+        font-size: 0.8rem; /* Even smaller font size for zoomed screens */
+        padding: 6px 12px; /* Adjust padding for zoomed screens */
+        min-width: 70px; /* Further reduce minimum width for zoomed screens */
+    }
+}
+
+/* Styling the sidebar */
+.stSidebar, .stSidebarContainer {
+    background-color: #242426; /* Dark sidebar background */
+    color: whitesmoke; /* Light text color */
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling headings */
+.stTitle, .stHeader, .stSubheader {
+    font-family: 'Poppins', sans-serif;
+    color: #60a5fa; /* Light blue for headings */
+    font-size: 1.5rem; /* Base font size for headings */
+}
+
+@media (max-width: 768px) {
+    .stTitle, .stHeader, .stSubheader {
+        font-size: 1.2rem; /* Smaller font size for mobile headings */
+    }
+}
+
+/* Specific adjustments for labels and text inputs */
+.stSidebarItem, .stSidebar label, .stTextInput label {
+    color: #a7a7a7 !important; /* Light gray for labels */
+    font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 768px) {
+    .stSidebarItem, .stSidebar label, .stTextInput label {
+        font-size: 0.9rem; /* Smaller font size for mobile labels */
+    }
+}
+
+.stTextInput input, .stPasswordInput input {
+    background-color: #2c2f33; /* Dark input background */
+    color: #e0e0e0 !important; /* Light text color */
+    border: 1px solid #444; /* Dark gray border */
+    font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 768px) {
+    .stTextInput input, .stPasswordInput input {
+        font-size: 0.9rem; /* Smaller font size for mobile inputs */
+    }
+}
+
+/* Styling the radio buttons */
+div[data-testid="stRadio"] label {
+    color: #f5f5f5 !important; /* Light text color */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; /* Base font size */
+    font-weight: 500;
+}
+
+div[data-testid="stRadio"] div[data-testid="stMarkdownContainer"] p {
+    color: #afafaf !important; /* Light gray for radio button text */
+    font-weight: 500;
+    margin: 0;
+    font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 768px) {
+    div[data-testid="stRadio"] label,
+    div[data-testid="stRadio"] div[data-testid="stMarkdownContainer"] p {
+        font-size: 0.9rem; /* Smaller font size for mobile radio buttons */
+    }
+}
+
+/* Styling the form submit button */
+.stFormSubmitButton button {
+    background-color: #534f4f !important; /* Dark gray button background */
+    color: whitesmoke !important; /* Light text color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem; /* Base font size */
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.stFormSubmitButton button:hover {
+    background-color: #666666; 
+    color: whitesmoke; 
+    border: 1px solid #777;
+}
+
+@media (max-width: 768px) {
+    .stFormSubmitButton button {
+        font-size: 0.9rem; /* Smaller font size for mobile submit buttons */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Styling the form container */
+.stForm {
+    background-color: #222222 !important; /* Dark gray form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Styling all conversation history text */
+.stText .st-emotion-cache-1b3332t {
+    color: #f5f5f5 !important; /* Light text color */
+    font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 768px) {
+    .stText .st-emotion-cache-1b3332t {
+        font-size: 0.9rem; /* Smaller font size for mobile conversation history */
+    }
+}
+
+/* Styling for autofilled input fields */
+input:-webkit-autofill {
+    background-color: #2c2f33 !important; /* Dark input background */
+    color: #e0e0e0 !important; /* Light text color */
+    transition: background-color 5000s ease-in-out 0s; /* Prevent autofill background change */
+}
+
+/* Dark mode styles for disabled text input */
+div[data-baseweb="base-input"] input:disabled {
+    background-color: #2c2f33 !important; /* Dark background */
+    color: #e0e0e0 !important; /* Light text color */
+    opacity: 1 !important; /* Ensure text is fully visible */
+}

@@ -1,0 +1,188 @@
+/* General body styling for light mode */
+body, .stApp {
+    background-color: #ffffff; /* White background */
+    font-family: 'Poppins', sans-serif;
+    color: #333333; /* Dark text color */
+    font-size: 1rem; /* Base font size */
+}
+
+/* Responsive font sizes */
+@media (max-width: 1200px) {
+    body, .stApp {
+        font-size: 0.95rem; /* Slightly smaller font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    body, .stApp {
+        font-size: 0.9rem; /* Smaller font size for mobile devices */
+    }
+}
+
+/* Light mode hover effect for buttons */
+.stButton > button {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333333; /* Dark text color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+    min-width: 100px;
+    border: 1px solid #cccccc; /* Light gray border */
+}
+
+.stButton > button:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+    color: #333333; /* Dark text color */
+    border: 1px solid #999999; /* Slightly darker border on hover */
+}
+/* Add space between refresh and toggle buttons */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Responsive button styles */
+@media (max-width: 768px) {
+    .stButton > button {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        min-width: 80px; /* Reduce minimum width for smaller screens */
+    }
+}
+
+/* Adjustments for zoomed screens */
+@media (max-width: 400px) {
+    .stButton > button {
+        font-size: 0.8rem; /* Even smaller font size for zoomed screens */
+        padding: 6px 12px; /* Adjust padding for zoomed screens */
+        min-width: 70px; /* Further reduce minimum width for zoomed screens */
+    }
+}
+
+/* Styling the sidebar */
+.stSidebar, .stSidebarContainer {
+    background-color: #f5f5f5; /* Light sidebar background */
+    color: #333333; /* Dark text color */
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling headings */
+.stTitle, .stHeader, .stSubheader {
+    font-family: 'Poppins', sans-serif;
+    color: #60a5fa; /* Light blue for headings */
+    font-size: 1.5rem; /* Base font size for headings */
+}
+
+@media (max-width: 768px) {
+    .stTitle, .stHeader, .stSubheader {
+        font-size: 1.2rem; /* Smaller font size for mobile headings */
+    }
+}
+
+/* Specific adjustments for labels and text inputs */
+.stSidebarItem, .stSidebar label, .stTextInput label {
+    color: #666666 !important; /* Medium gray for labels */
+    font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 768px) {
+    .stSidebarItem, .stSidebar label, .stTextInput label {
+        font-size: 0.9rem; /* Smaller font size for mobile labels */
+    }
+}
+
+.stTextInput input, .stPasswordInput input {
+    background-color: #ffffff; /* White input background */
+    color: #333333 !important; /* Dark text color */
+    border: 1px solid #cccccc; /* Light gray border */
+    font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 768px) {
+    .stTextInput input, .stPasswordInput input {
+        font-size: 0.9rem; /* Smaller font size for mobile inputs */
+    }
+}
+
+/* Styling the radio buttons */
+div[data-testid="stRadio"] label {
+    color: #333333 !important; /* Dark text color */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; /* Base font size */
+    font-weight: 500;
+}
+
+div[data-testid="stRadio"] div[data-testid="stMarkdownContainer"] p {
+    color: #666666 !important; /* Medium gray for radio button text */
+    font-weight: 500;
+    margin: 0;
+    font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 768px) {
+    div[data-testid="stRadio"] label,
+    div[data-testid="stRadio"] div[data-testid="stMarkdownContainer"] p {
+        font-size: 0.9rem; /* Smaller font size for mobile radio buttons */
+    }
+}
+
+/* Styling the form submit button */
+.stFormSubmitButton button {
+    background-color: #f0f0f0 !important; /* Light gray button background */
+    color: #333333 !important; /* Dark text color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem; /* Base font size */
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stFormSubmitButton button:hover {
+    background-color:#e0e0e0 !important; /* Dark red hover effect */
+    /*color: whitesmoke !important;*/
+    border: 1px solid #999999;
+}
+
+@media (max-width: 768px) {
+    .stFormSubmitButton button {
+        font-size: 0.9rem; /* Smaller font size for mobile submit buttons */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Styling the form container */
+.stForm {
+    background-color: #f5f5f5 !important; /* Light gray form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333333; /* Dark text color */
+}
+
+/* Styling all conversation history text */
+.stText .st-emotion-cache-1b3332t {
+    color: #333333 !important; /* Dark text color */
+    font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 768px) {
+    .stText .st-emotion-cache-1b3332t {
+        font-size: 0.9rem; /* Smaller font size for mobile conversation history */
+    }
+}
+
+/* Styling for autofilled input fields */
+input:-webkit-autofill {
+    background-color: #ffffff !important; /* White background */
+    color: #333333 !important; /* Dark text color */
+    transition: background-color 5000s ease-in-out 0s; /* Prevent autofill background change */
+}
+
