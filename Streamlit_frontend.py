@@ -493,6 +493,7 @@ def main():
         - **Conversation History**: Keep track of your previous interactions with the companion.
         - **User Profiles**: Update your profile information and preferences.
         - **Dark/Light Mode**: Choose a theme that suits your preference.
+        - **Delete Account**: Delete your account along with the conversation history and community posts.
         """)
 
         st.subheader("How It Works")
